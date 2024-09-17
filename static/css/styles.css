@@ -1,0 +1,269 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-blue-100 {
+  background-color: #ebf8ff;
+}
+
+.border-blue-400 {
+  border-color: #63b3ed;
+}
+
+.text-blue-700 {
+  color: #2b6cb0;
+}
+
+.transform {
+  transition: transform 0.3s ease-in-out;
+}
+
+.transition-transform {
+  transition: transform 0.3s ease-in-out;
+}
+
+.transition-all {
+  transition: all 0.3s ease-in-out;
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+.hover\:scale-110:hover {
+  transform: scale(1.1);
+}
+
+.hover\:underline:hover {
+  text-decoration: underline;
+}
+
+.focus\:ring-2:focus {
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
+}
+
+.focus\:ring-indigo-500:focus {
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
+}
+
+.text-indigo-600 {
+  color: #4c51bf;
+}
+
+.text-indigo-700 {
+  color: #434190;
+}
+
+.bg-indigo-50 {
+  background-color: #ebf4ff;
+}
+
+.bg-indigo-600 {
+  background-color: #4c51bf;
+}
+
+.bg-indigo-700 {
+  background-color: #434190;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+button:hover,
+button:focus {
+  outline: none;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #4c51bf;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
+}
+
+.file\:mr-4 {
+  margin-right: 1rem;
+}
+
+.file\:py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.file\:px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.file\:rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.file\:border-0 {
+  border-width: 0;
+}
+
+.file\:bg-indigo-50 {
+  background-color: #ebf4ff;
+}
+
+.file\:text-indigo-600 {
+  color: #4c51bf;
+}
+
+.file\:bg-indigo-100 {
+  background-color: #e2e8f0;
+}
+
+.file\:text-indigo-600 {
+  color: #4c51bf;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 0.375rem;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.task-item:hover {
+  transform: scale(1.05);
+}
+
+.task-item img {
+  max-width: 6rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+/* Improved Task Item Styles */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  /* Increased padding for more spacing */
+  background-color: #ffffff;
+  /* Clean white background */
+  border-radius: 0.75rem;
+  /* Softer border radius */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.task-item:hover {
+  transform: translateY(-4px);
+  /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  /* More prominent shadow on hover */
+}
+
+/* Typography Enhancements */
+.task-item p {
+  font-size: 1rem;
+  /* Adjust font size for clarity */
+  color: #2d3748;
+  /* Darker, modern text color */
+  margin: 0;
+  /* Remove default margin */
+  font-weight: 500;
+  /* Medium font weight for emphasis */
+}
+
+/* Priority Styling */
+.task-item span {
+  font-size: 0.875rem;
+  /* Slightly smaller font for the priority */
+  color: #718096;
+  /* Lighter text for secondary info */
+  font-weight: 400;
+  /* Lighter weight for priority text */
+}
+
+/* Checkbox Styling */
+.task-item input[type="checkbox"] {
+  width: 1.25rem;
+  height: 1.25rem;
+  accent-color: #4c51bf;
+  /* Using the same indigo color as other elements */
+  transition: transform 0.2s ease-in-out;
+}
+
+.task-item input[type="checkbox"]:hover {
+  transform: scale(1.1);
+  /* Slightly enlarge checkbox on hover */
+}
+
+/* Edit Button Styling */
+.task-item a {
+  color: #4c51bf;
+  /* Indigo color for links */
+  font-weight: 500;
+  /* Medium weight */
+  transition: color 0.3s ease-in-out;
+}
+
+.task-item a:hover {
+  color: #5a67d8;
+  /* Darker indigo on hover */
+}
+
+/* Image Styling (if present) */
+.task-item img {
+  max-width: 80px;
+  /* Constrain the width of the image */
+  border-radius: 0.5rem;
+  /* Keep rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for images */
+  transition: transform 0.3s ease-in-out;
+}
+
+.task-item img:hover {
+  transform: scale(1.05);
+  /* Enlarge image slightly on hover */
+}
+
+/* Spacing Between Task Items */
+#task-list {
+  margin-top: 1.5rem;
+  /* Space above the task list */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* Space between task items */
+}
