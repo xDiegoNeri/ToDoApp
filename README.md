@@ -13,9 +13,8 @@ ToDoApp es una aplicación web de gestión de tareas simple construida usando **
 
 ## Estructura del proyecto
 
-Aquí tienes una vista general de la estructura del proyecto:
 
-```bash
+bash
 ├── app.py               # Archivo principal de la aplicación
 ├── config.py            # Configuraciones
 ├── forms.py             # Formularios WTForms para autenticación y gestión de tareas
@@ -43,7 +42,7 @@ Aquí tienes una vista general de la estructura del proyecto:
 
 Clona el repositorio:
 
-```bash
+bash
 git clone 
 cd todoapp
 
