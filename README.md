@@ -40,11 +40,8 @@ ToDoApp es una aplicación web de gestión de tareas simple construida usando **
 
 # Instalación
 
-Clona el repositorio:
-
-bash
-git clone 
-cd todoapp
+Clona el repositorio: https://github.com/xDiegoNeri/ToDoApp.git
+con git clone 
 
 Configura un entorno virtual:
 python -m venv venv
