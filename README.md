@@ -14,7 +14,7 @@ ToDoApp es una aplicación web de gestión de tareas simple construida usando **
 ## Estructura del proyecto
 
 
-bash
+```bash
 ├── app.py               # Archivo principal de la aplicación
 ├── config.py            # Configuraciones
 ├── forms.py             # Formularios WTForms para autenticación y gestión de tareas
@@ -29,7 +29,7 @@ bash
 ├── README.md            # Documentación del proyecto (este archivo)
 ├── requirements.txt     # Dependencias del proyecto
 └── .gitignore           # Archivo para ignorar archivos sensibles y no necesarios
-
+```
 # Requisitos
 - Python 3.8+
 - Flask
